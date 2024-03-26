@@ -3,3 +3,5 @@ This repository is to share my journey of learning machine learning and deep lea
 1. Machine Learning. (https://www.udemy.com/course/machinelearning/?couponCode=KEEPLEARNING)
 
 2. Deep Learning. (https://www.udemy.com/course/deeplearning/?kw=deep+le&src=sac&couponCode=GENAISALE24)
+
+3. Natural Language Processing. (https://www.udemy.com/course/nlp-natural-language-processing-with-python/?couponCode=GENAISALE24)
