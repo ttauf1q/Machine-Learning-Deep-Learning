@@ -9,7 +9,7 @@ from langchain.vectorstores import faiss
 import os
 os.environ["GOOGLE_API_KEY"] = "AIzaSyAMXV-2RA3q5uICgpI7FfKrzjYzb2P7fFI"
 
-PdfReader = PdfReader('Enter Your PDF name or PATH here')
+PdfReader = PdfReader('Data Science.pdf')
 
 from typing_extensions import Concatenate
 
@@ -47,6 +47,6 @@ model = ChatGoogleGenerativeAI(model="gemini-pro",
 
 prompt = PromptTemplate(template = prompt_template, input_variables = ["context", "question"])
 chain = load_qa_chain(model, chain_type="stuff", prompt=prompt)
-query = "Enter Your Question Here "
+query = " NER stands for " # look at page 10 in the pdf
 docs = document_search.similarity_search(query)
 chain.run(input_documents = docs, question = query)
